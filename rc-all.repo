@@ -1,0 +1,5 @@
+[rc-all]
+name=RC packages for all nodes
+baseurl=http://mirror-proxy.rc.fas.harvard.edu/rc-centos7-all
+gpgcheck=0
+priority=90

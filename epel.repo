@@ -1,0 +1,7 @@
+[epel]
+name=Extra Packages for Enterprise Linux 7 - $basearch
+baseurl=http://mirror-proxy.rc.fas.harvard.edu/compute/production/epel/7/x86_64
+enabled=1
+gpgcheck=0
+failovermethod=priority
+priority=99
