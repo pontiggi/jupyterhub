@@ -28,7 +28,9 @@ WORKDIR /src/jupyterhub
 RUN pip install . && \
     rm -rf $PWD ~/.cache ~/.npm
 
-RUN pip install batchspawner
+RUN pip install port_range
+RUN pip install git+https://github.com/pontiggi/batchspawner.git@odyssey_portrange
+RUN pip install git+https://github.com/pontiggi/wrapspawner.git
 RUN mkdir -p /srv/jupyterhub/
 WORKDIR /srv/jupyterhub/
 EXPOSE 8000
